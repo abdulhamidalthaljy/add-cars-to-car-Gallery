@@ -10,20 +10,25 @@
 </div>
 <hr>
 <hr>
-<form [formGroup]="carPush" (ngSubmit)="onSubmit()">
-  <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Add image link</label>
-    <input type="text" formControlName="img" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<div class="text-center" style="background-color: rgb(171, 160, 147);">
+<form [formGroup]="carPush"  (ngSubmit)="onSubmit()">
+  <div class="mb-3" >
+    <label for="exampleInputEmail1" class="form-label">Add image link</label><br>
+    <input type="text" formControlName="img" class="text-center " style="width: 500px;" aria-describedby="emailHelp">
   </div>
+  <br>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Add Name</label>
-    <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <label for="exampleInputEmail1" class="form-label">Add Name</label><br>
+    <input type="text" formControlName="name" class="text-center " style="width: 500px;" aria-describedby="emailHelp">
   </div>
+  <br>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Add production year</label>
-    <input type="text" formControlName="productionYear" class="form-control" id="exampleInputEmail1"
+    <label for="exampleInputEmail1" class="form-label">Add production year</label> <br>
+    <input type="text" formControlName="productionYear" class="text-center " style="width: 500px;"
       aria-describedby="emailHelp">
   </div>
+  <br>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
