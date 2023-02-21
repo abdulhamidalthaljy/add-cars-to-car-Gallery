@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand  btn btn-light" routerLink="/">Cars Home</a>
+    <a class="navbar-brand btn btn-light" routerLink="/contactus">contact us</a>
+      <ul class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link btn btn-success" (click)="addDonate()" href="#">Donate</a>
+        </li>
+        <li class="nav-item">
+          <p>Donation sum <span class="btn btn-danger"> {{ sum }} Euro</span></p>
+        </li>
+        <li class="nav-item">
+          <ng-template [ngIf]="sum > 20">
+
+            <p class="btn btn-success">you are<b>"VIP"</b></p>
+      
+          </ng-template>
+        </li>
+      </ul>
+    
+    
+    <div class="nav-item"> 
+      
+    </div>
+    
+  </div>
+</nav>

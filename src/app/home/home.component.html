@@ -1,0 +1,28 @@
+<div class="d-flex justify-content-center flex-wrap gap-4">
+  <div class="card" style="width: 18rem;" *ngFor="let car of cars">
+    <img src="{{car.img}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">Name of the car : {{car.name}}</p>
+      <p class="card-text">ProductionYear of the car : {{car.productionYear}}</p>
+    </div>
+  </div>
+
+</div>
+
+<form [formGroup]="carPush" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Add image link</label>
+    <input type="text" formControlName="img" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Add Name</label>
+    <input type="text" formControlName="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Add production year</label>
+    <input type="text" formControlName="productionYear" class="form-control" id="exampleInputEmail1"
+      aria-describedby="emailHelp">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
