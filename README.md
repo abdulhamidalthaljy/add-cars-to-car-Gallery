@@ -1,5 +1,5 @@
 # Day2
- <h6>Demo  hier : https://abdulhamidalthaljy.github.io/add-cars-to-car-Gallery/</h6>
+Demo  hier : https://abdulhamidalthaljy.github.io/add-cars-to-car-Gallery/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
