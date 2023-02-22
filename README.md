@@ -1,4 +1,5 @@
 # Day2
+you can check the demo  hier : https://abdulhamidalthaljy.github.io/angular-day2/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
